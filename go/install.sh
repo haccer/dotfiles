@@ -13,10 +13,8 @@ FILE=$(echo $CUR | cut -d'/' -f5)
 # Unpack file to /usr/local
 sudo tar -C /usr/local -xzf $FILE
 
+# Remove Go .tar.gz
+rm $FILE
+
 # Make GOPATH
 mkdir ~/.golang
-
-# Set environment
-echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.profile
-echo "export GOPATH=\$HOME/.golang" >> ~/.profile
-source ~/.profile
