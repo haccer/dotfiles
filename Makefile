@@ -1,5 +1,5 @@
 .PHONY: all
-all: vim
+all: vim go
 
 .PHONY: vim
 vim:
