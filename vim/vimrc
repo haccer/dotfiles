@@ -1,0 +1,29 @@
+" ---] Pathogen
+execute pathogen#infect()
+syntax on
+filetype plugin indent on " required
+
+" ---] Map                                                                                                                                                                                             
+inoremap jj <ESC>                                                                                                                                                                                      
+                                                                                                                                                                                                       
+" ---] Settings                                                                                                                                                                                        
+set mouse=a              " Enable mouse                                                                                                                                                                
+set encoding=utf-8                                                                                                                                                                                     
+set t_Co=256                                                                                                                                                                                           
+set term=xterm-256color                                                                                                                                                                                
+set termencoding=utf-8                                                                                                                                                                                 
+set number               " Show line numbers
+set ts=2                 " Tabs = 2 spaces
+set autoindent           " Autoindent tabs
+set smartindent
+set expandtab
+set shiftwidth=2      
+set showmatch
+set incsearch            " Shows the match while typing
+set hlsearch
+set ignorecase
+set smartcase
+
+" --] Theme
+set background=dark
+colorscheme PaperColor
