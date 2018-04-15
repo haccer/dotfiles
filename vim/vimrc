@@ -1,29 +1,29 @@
 " ---] Map
-inoremap jj <ESC>
+inoremap jj <ESC>                   " Use 'jj' as a trigger
 
 " ---] Settings
-set mouse=a              " Enable mouse
+set mouse=a                         " Enable mouse
 set encoding=utf-8
 set t_Co=256
 set term=xterm-256color
 set termencoding=utf-8
-set number               " Show line numbers
-set ts=2                 " Tabs = 2 spaces
-set autoindent           " Autoindent tabs
+set number                          " Show line numbers
+set ts=2                            " Tabs = 2 spaces
+set autoindent                      " Autoindent tabs
 set smartindent
 set expandtab
 set shiftwidth=2      
 set showmatch
-set incsearch            " Shows the match while typing
+set incsearch                       " Shows the match while typing
 set hlsearch
 set ignorecase
 set smartcase
 
 " --] Plugins
-set nocompatible " Required
-filetype off     " Required
+set nocompatible                    " Required
+filetype off                        " Required
 
-set rtp+=~/.vim/bundle/Vundle.vim " Set runtime path to include Vundle & initialize
+set rtp+=~/.vim/bundle/Vundle.vim   " Set runtime path to include Vundle & initialize
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'       " Required
@@ -34,8 +34,8 @@ Plugin 'rust-lang/rust.vim'         " Rust syntax
 Plugin 'fatih/vim-go'               " Go syntax & Auto format
 Plugin 'NLKNguyen/papercolor-theme' " Papercolor Vim Theme
 
-call vundle#end()         " Required
-filetype plugin indent on " Required
+call vundle#end()                   " Required
+filetype plugin indent on           " Required
 
 " --] Theme
 set background=dark
