@@ -1,7 +1,9 @@
 os: linux
 
 install:
-- mv . ~/.dotfiles
+- git clone https://github.com/$TRAVIS_REPO_SLUG.git ~/.dotfiles
+- cd ~/.dotfiles
+- git checkout -qf $TRAVIS_COMMIT
 
 script:
 - make
