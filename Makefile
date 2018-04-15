@@ -1,7 +1,7 @@
 .PHONY: all
 all: vim go
 
-.PHONEY: test
+.PHONY: test
 test:
 	echo "Welcome to dotfiles"
 
