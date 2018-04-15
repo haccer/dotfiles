@@ -18,6 +18,7 @@ set incsearch                       " Shows the match while typing
 set hlsearch
 set ignorecase
 set smartcase
+set shortmess=a                     " Avoid ENTER prompts
 
 " --] Plugins
 set nocompatible                    " Required
