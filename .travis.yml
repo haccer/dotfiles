@@ -1,0 +1,7 @@
+os: linux
+
+install:
+- mv . ~/.dotfiles
+
+script:
+- make
