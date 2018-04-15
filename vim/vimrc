@@ -1,17 +1,12 @@
-" ---] Pathogen
-execute pathogen#infect()
-syntax on
-filetype plugin indent on " required
+" ---] Map
+inoremap jj <ESC>
 
-" ---] Map                                                                                                                                                                                             
-inoremap jj <ESC>                                                                                                                                                                                      
-                                                                                                                                                                                                       
-" ---] Settings                                                                                                                                                                                        
-set mouse=a              " Enable mouse                                                                                                                                                                
-set encoding=utf-8                                                                                                                                                                                     
-set t_Co=256                                                                                                                                                                                           
-set term=xterm-256color                                                                                                                                                                                
-set termencoding=utf-8                                                                                                                                                                                 
+" ---] Settings
+set mouse=a              " Enable mouse
+set encoding=utf-8
+set t_Co=256
+set term=xterm-256color
+set termencoding=utf-8
 set number               " Show line numbers
 set ts=2                 " Tabs = 2 spaces
 set autoindent           " Autoindent tabs
@@ -27,3 +22,20 @@ set smartcase
 " --] Theme
 set background=dark
 colorscheme PaperColor
+
+" --] Plugins
+set nocompatible " Required
+filetype off     " Required
+
+set rtp+=~/.vim/bundle/Vundle.vim " Set runtime path to include Vundle & initialize
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'    " Required
+Plugin 'cespare/vim-toml'        " Toml syntax
+Plugin 'ekalinin/Dockerfile.vim' " Dockerfile syntax
+Plugin 'jiangmiao/auto-pairs'    " Insert or delete brackets, quotes, etc. in a pair
+Plugin 'rust-lang/rust.vim'      " Rust syntax
+Plugin 'fatih/vim-go'            " Go syntax & Auto format
+
+call vundle#end()         " Required
+filetype plugin indent on " Required
