@@ -1,6 +1,10 @@
 .PHONY: all
 all: vim go
 
+.PHONEY: test
+test:
+	echo "Welcome to dotfiles"
+
 .PHONY: vim
 vim:
 	ln -sfn ~/.dotfiles/vim/vimrc ~/.vimrc
