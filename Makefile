@@ -5,7 +5,7 @@ all: vim go
 vim:
 	ln -sfn ~/.dotfiles/vim/vimrc ~/.vimrc
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	vim +PluginInstall +qall
+	vim -E -u NONE -S ~/.vim/vundle.vim +PluginInstall +qall > /dev/null
 
 .PHONY: go
 go:
