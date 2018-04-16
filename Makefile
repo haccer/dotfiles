@@ -12,7 +12,7 @@ nvim:
 	ln -sfn ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 	ln -sfn ~/.dotfiles/nvim/vimrc ~/.vimrc
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	vim -E -u NONE +PluginInstall +qall > /dev/null
+	vim +PluginInstall +qall
 
 .PHONY: go
 go:
