@@ -13,7 +13,4 @@ vim:
 
 .PHONY: go
 go:
-	[ -d /usr/local/go/bin ] || cd ~/.dotfiles/go && chmod 775 install.sh; ./install.sh
-	echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.profile
-	echo "export GOPATH=\$HOME/.golang" >> ~/.profile
-	source ~/.profile
+	[ -d /usr/local/go ] || cd ~/.dotfiles/go && chmod 775 install.sh; ./install.sh
