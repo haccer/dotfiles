@@ -1,13 +1,16 @@
 .PHONY: all
-all: vim go
+all: nvim go
 
 .PHONY: test
 test:
 	echo "Welcome to dotfiles"
 
-.PHONY: vim
-vim:
-	ln -sfn ~/.dotfiles/vim/vimrc ~/.vimrc
+.PHONY: nvim
+nvim:
+	[ -f /usr/bin/nvim ] || sudo apt-get install neovim
+	[ -d ~/.config/nvim ] || mkdir ~/.config/nvim
+	ln -sfn ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+	ln -sfn ~/.dotfiles/nvim/vimrc ~/.vimrc
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	vim -E -u NONE +PluginInstall +qall > /dev/null
 
