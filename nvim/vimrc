@@ -16,6 +16,7 @@ set incsearch                       " Shows the match while typing
 set hlsearch
 set ignorecase
 set smartcase
+set guicursor=                      " Fix nvim weirdness
 
 " --] Plugins
 set nocompatible                    " Required
