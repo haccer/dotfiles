@@ -12,6 +12,8 @@ nvim:
 	ln -sfn ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 	ln -sfn ~/.dotfiles/nvim/vimrc ~/.vimrc
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	[ -d ~/.vim/colors ] || mkdir ~/.vim/colors
+	wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim -O ~/.vim/colors/atom-dark-256.vim
 	vim +PluginInstall +qall
 
 .PHONY: go
