@@ -1,5 +1,5 @@
 .PHONY: all
-all: nvim go zsh rust
+all: nvim go rust zsh
 
 .PHONY: test
 test:
