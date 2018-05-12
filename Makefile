@@ -7,7 +7,7 @@ test:
 
 .PHONY: nvim
 nvim:
-	[ -f /usr/bin/nvim ] || sudo add-apt-repository ppa:neovim-ppa/stable && sudo apt-get update && sudo apt-get install -y neovim
+	[ -f /usr/bin/nvim ] || sudo add-apt-repository ppa:neovim-ppa/stable -y && sudo apt-get update && sudo apt-get install -y neovim
 	[ -d ~/.config/nvim ] || mkdir ~/.config/nvim
 	ln -sfn ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 	ln -sfn ~/.dotfiles/nvim/vimrc ~/.vimrc
