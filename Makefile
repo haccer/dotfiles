@@ -27,7 +27,7 @@ rust:
 
 .PHONY: zsh
 zsh:
-	[ -f /usr/bin/zsh ] || sudo apt-get install zsh
+	[ -f /usr/bin/zsh ] || sudo apt-get install -y zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	ln -sfn ~/.dotfiles/zsh/haccer.zsh-theme ~/.oh-my-zsh/themes/haccer.zsh-theme
 	rm ~/.zshrc; ln -sfn ~/.dotfiles/zsh/zshrc ~/.zshrc
