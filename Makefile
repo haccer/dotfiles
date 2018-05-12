@@ -32,4 +32,5 @@ zsh:
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 	ln -sfn ~/.dotfiles/zsh/haccer.zsh-theme ~/.oh-my-zsh/themes/haccer.zsh-theme
 	rm ~/.zshrc; ln -sfn ~/.dotfiles/zsh/zshrc ~/.zshrc
+	/usr/bin/zsh
 	source ~/.zshrc
