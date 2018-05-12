@@ -1,5 +1,5 @@
 .PHONY: all
-all: nvim go zsh
+all: nvim go zsh rust
 
 .PHONY: test
 test:
@@ -19,6 +19,10 @@ nvim:
 .PHONY: go
 go:
 	[ -d /usr/local/go ] || cd ~/.dotfiles/go && chmod 775 install.sh; ./install.sh
+
+.PHONY: rust
+rust:
+	[ -d $HOME/.cargo/bin ] || curl https://sh.rustup.rs -sSf | sh
 
 .PHONY: zsh
 zsh:
