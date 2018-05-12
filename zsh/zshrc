@@ -1,6 +1,13 @@
 # Path
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Golang
+export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/golang
-export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/local/go/bin:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin
+
+# Rust
+export PATH=$HOME/.cargo/bin:$PATH
 
 # 256 Colors
 if [ "$TERM" = "xterm" ] || [ "$TERM" = "xterm-256color" ]; then
